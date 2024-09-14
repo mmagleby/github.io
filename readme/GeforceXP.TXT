@@ -1,0 +1,57 @@
+EAW Briefing Screen fix for WinXP
+
+This describes how to fix the briefing screen and map corruption when using a GeForce card under NT.
+Because the exact registry path of the fix is different on every system, it involves a bit of detective
+work.  It then requires you to manually editing the Windows system registry.  While not particularly 
+difficult, it can be very dangerous to your system's health if you are not careful.  So, please be 
+careful!
+
+For a simple registry overview, check out http://www.we-compute.com/registry.html
+
+max188
+http://www.xmission.com/~mmagleby/eaw
+1/31/02
+
+
+
+
+1) Open Regedit
+
+2) Navigate to:
+   HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\VIDEO
+
+3) Look for the name:
+   \Device\Video0
+
+4) Look at the cooresponding Data value.  It will look something like this:
+   \Registry\Machine\System\CurrentControlSet\Control\Video\{52BE6E44-53E9-4A0B-AF3C-70A73F8AD1CE}\0000
+
+5) Make note of the value in the brackets and the instance at the end of the line.  You may want to print 
+   out this branch (cntrl-p) to easily reference these values later.  In this example it is:
+   {52BE6E44-53E9-4A0B-AF3C-70A73F8AD1CE}\0000
+
+6) Navigate to:
+   HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Video
+
+7) There may be several sub-categories.  Select the one that matches the value in the brackets you noted 
+   in step 5.  In this example it is:
+   {52BE6E44-53E9-4A0B-AF3C-70A73F8AD1CE}
+
+8) Select the instance you noted in step 5.  In this example it is:
+   \0000
+
+9) Right-click this same instance (\0000) and select New/DWORD Value.  This will create a value called 
+   "New Value #1".
+
+10) Right click the "New Value #1" and rename it to NoAdjustedPitch.
+
+11) Double-click the new NoAdjustedPitch and assign it a Hexadecimal value of 1.
+
+13) Exit regedit and reboot.
+
+14) The Briefing screens and maps should now be working properly.
+
+
+
+
+
