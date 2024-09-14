@@ -1,0 +1,108 @@
+.mstheme
+{
+	separator-image: url(loohorsd.gif);
+	list-image-1: url(expbul1d.gif);
+	list-image-2: url(expbul2d.gif);
+	list-image-3: url(expbul3d.gif);
+	nav-banner-image: url(expbannd.gif);
+	navbutton-horiz-normal: url(exphbudd.gif);
+	navbutton-horiz-hovered: url(exphbudd.gif);
+	navbutton-horiz-pushed: url(exphbusd.gif);
+	navbutton-vert-normal: url(expvbudd.gif);
+	navbutton-vert-hovered: url(expvbudd.gif);
+	navbutton-vert-pushed: url(expvbusd.gif);
+	navbutton-home-normal: url(exphombd.gif);
+	navbutton-home-hovered: url(exphombd.gif);
+	navbutton-home-pushed: url(exphombd.gif);
+	navbutton-next-normal: url(expnexbd.gif);
+	navbutton-next-hovered: url(expnexbd.gif);
+	navbutton-next-pushed: url(expnexbd.gif);
+	navbutton-prev-normal: url(expprebd.gif);
+	navbutton-prev-hovered: url(expprebd.gif);
+	navbutton-prev-pushed: url(expprebd.gif);
+	navbutton-up-normal: url(expupbd.gif);
+	navbutton-up-hovered: url(expupbd.gif);
+	navbutton-up-pushed: url(expupbd.gif);
+}
+.mstheme-bannertxt
+{
+	font-family: Comic Sans MS;
+	color: rgb(255, 255, 204);
+	font-size: 6;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-horiz-navtxt
+{
+	font-family: Comic Sans MS;
+	color: rgb(255, 255, 204);
+	font-size: 2;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-vert-navtxt
+{
+	font-family: Book Antiqua, Times New Roman, Times;
+	color: rgb(255, 255, 204);
+	font-size: 2;
+	font-style: normal;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxthome
+{
+	font-family: Comic Sans MS;
+	color: rgb(255, 255, 204);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxtnext
+{
+	font-family: Comic Sans MS;
+	color: rgb(255, 255, 204);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxtprev
+{
+	font-family: Comic Sans MS;
+	color: rgb(255, 255, 204);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+.mstheme-navtxtup
+{
+	font-family: Comic Sans MS;
+	color: rgb(255, 255, 204);
+	font-size: 1;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+}
+ul
+{
+	list-style-image: url(expbul1d.gif);
+}
+ul ul
+{
+	list-style-image: url(expbul2d.gif);
+}
+ul ul ul
+{
+	list-style-image: url(expbul3d.gif);
+}
